@@ -10,7 +10,7 @@
   - Semantic : 의미 있는 구조
   - Layout
 
-## HTML vasic
+## HTML basic
 
 - HTML : Hyper Text Markup Language
 
@@ -29,6 +29,15 @@
 
   <tag ...> : Empty Element
   ```
+
+- HTML 속성(attribute)
+  - HTML Element를 표시할때 필요한 추가정보 입력
+  - Name="value"
+    '''
+    <a href="https://www.naver.com">네이버</a>
+
+<img src="photo.jpg">
+'''
 
 ## HTML Basic Structure
 
@@ -63,9 +72,52 @@
 
 #### heading(제목)
 
+- h(heading) : 제목태그
+- 1 ~ 6 단계로 표시됨
+
 #### paragraph(단락)
 
+- p(paragraaph) : 단락태그
+- 강제줄바꿈, 강제 공백은 이식되지 않고 공백 한 칸으로만 인식
+  - Line berak : br(강제줄바꿈 태그)
+  - space : &nbsp;(강제 공백 엔터티[entity])
+  - hr(horizontal rule) : 수평선 긋기
+    - 단락을 선의 형태로 구분
+
 #### List(목록)
+
+- 순서있는 목록
+- ul(unordered List) : 순서없는 목록
+- ol(Ordered List) : 순서있는 목록
+- li(List Item) : 목록 항목
+
+\*\* 포함관계(Nested Structure)
+
+- 태그안에 다른 태그들이 포함되는 것
+- 포함하는 요소
+  - 조상요소(Ancestor)
+  - 부모요소(Parent)
+- 포함되는 요소
+  - 자식요소(Child)
+  - 자손요소(Descendant)
+- 옆에 나란히 있는 요소 - 형제요소(Sibling)
+
+'''
+(1) <html>
+(2) <body>
+(3) <h1> 내용 제목 </h1>
+(4) <p>
+(5) 단락내용<br>
+</P>
+<body>
+</html>
+'''
+
+(1)조상요소 | 기준요소 |
+(2)조상요소 | 자식요소 |
+(3) | 자손요소 |
+(4)부모요소 | 자손요소 | 기준요소
+(5)기준요소 | 자손요소 | 자식요소
 
 #### Table(표)
 
