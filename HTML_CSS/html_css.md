@@ -104,22 +104,35 @@
 
 '''
 (1) <html>
-(2) <body>
-(3) <h1> 내용 제목 </h1>
-(4) <p>
-(5) 단락내용<br>
-</P>
-<body>
-</html>
+(2)   <body>
+(3)     <h1> 내용 제목 </h1>
+(4)     <p>
+(5)     단락내용<br>
+        </P>
+      <body>
+    </html>
 '''
 
-(1)조상요소 | 기준요소 |
-(2)조상요소 | 자식요소 |
-(3) | 자손요소 |
+(1)조상요소 | 기준요소 | 조상요소
+(2)조상요소 | 자식요소 | 부모요소
+(3)        | 자손요소 | 형제요소
 (4)부모요소 | 자손요소 | 기준요소
 (5)기준요소 | 자손요소 | 자식요소
 
+- Description List(설명 목록)
+
+  - dl(descriptip List)
+  - dt(descriptip table)
+  - dd(descriptip )
+
 #### Table(표)
+
+- table
+- thead(table head) : 표 상단 - 제목
+- tbody(table body) : 컨텐츠, 데이터
+- tr(table row)
+- th(table header)
+- td(table data)
 
 #### Hyper Link(하이퍼 링크)
 
