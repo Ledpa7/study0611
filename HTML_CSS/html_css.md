@@ -130,17 +130,47 @@
 - table
 - thead(table head) : 표 상단 - 제목
 - tbody(table body) : 컨텐츠, 데이터
-- tr(table row)
-- th(table header)
-- td(table data)
+- tr(table row) : 행
+- th(table header) : 제목
+- td(table data) : 칸(열)
 
 #### Hyper Link(하이퍼 링크)
+
+- a(anchor)
+- 기본 속성 : Href(hypertext reference) : 연결할 위치(웹페이지)
+
+- 링크 이동 표시
+  - 외부링크
+  - 내부링크 : Bookmark
 
 ### Media
 
 #### Image(이미지)
 
+- img(image)
+  - 빈 요소
+- 기본 속성
+  - src(source) : 이미지 파일 이름, 위치
+  - alt(alternate text) : 대체 텍스트 - 이미지가 화면에 표시되지 않을때, screen reder
+'''
+
+<img src="photo.jpg" alt="">
+'''
+
 #### Video(영상)
+
+-video, source
+- 속성
+  - video 태그 : on/off 형태attribute
+    - controls : 동영상 제어 버튼
+    - autoplay : 자동재생
+    - muted : 음소거
+    - loop : 반복 재생
+  - source 태그
+  - src : 파일 이름, 경로
+  - tyoe : 미디어의 형식
+  
+- Youtube 영상
 
 ## HTML Structure
 
