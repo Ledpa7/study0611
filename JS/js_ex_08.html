@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>DOM 접근 API</title>
+</head>
+<body>
+  <h1>DOM 접근 API</h1>
+
+  <div>content</div>
+  <div class="content">content2</div>
+  <div id="content">content3</div>
+
+  <p class="new-content"></p>
+
+  <img src="images/image_01.jpg" alt="" class="photo">
+
+  <script>
+    //HTML4
+    let getTagName = document.getElementsByTagName('div');
+    console.log(getTagName);
+    console.log(getTagName.length);
+    console.log(getTagName[0]);
+
+    let getClassName = document.getElementsByClassName('content');
+    console.log(getClassName.length);
+
+    let getId = document.getElementById('content');
+    console.log(getId);
+
+    //HTML5
+    let queryTag = document.querySelector('div');
+    console.log(queryTag);
+
+    let qureyClass = document.querySelector('.content');
+    console.log(qureyClass);
+
+    let qureyId = document.querySelector('#content');
+    console.log(qureyId);
+
+    console.log('innerHTML:' + qureyClass.innerHTML);
+
+    let newContent = document.querySelector('.newContent');
+
+    newContent.innerHTML = qureyClass.innerHTML;
+
+    let image = document.querySelector('.photo');
+    image.src = 'project/images/bg_about.jpg';
+
+
+  </script>
+
+</body>
+</html>
